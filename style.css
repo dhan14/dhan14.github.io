@@ -1,0 +1,241 @@
+/*Universal*/
+@font-face {
+    font-family: OverpassMono;
+    src: url('../font/OverpassMono-SemiBold.ttf');
+}
+html {
+    font-family: OverpassMono;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0%;
+    background-color: #2C3639;
+    color: (196, 192, 192, 0.76);
+}
+/*Bagian Atas*/
+.jumbotron {
+    font-size: 28px;
+    text-align: center;
+}
+.sticky{
+    /* background-color: #2C3639; */
+    background-color: #2C3639;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+  }
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+nav li a:hover{
+    color : #A27B5C;
+}
+nav li a:active{
+    color : #A27B5C;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+.main-root{
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    position: static;
+    color: rgba(196, 192, 192, 0.76);
+}
+.main-root >p{
+    font-size: 36px;
+}
+.main-root > h1{
+    font-size: 64px;
+}
+aside{
+    height: 0;
+    overflow: hidden;
+    transition: height 3s ease;
+    float: right;
+    position: sticky;
+  top: 72px;
+  align-self: flex-start;
+  background-color: #2C3639;
+  color: white;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+aside.show {
+    height: auto;
+  }
+  .toggle-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #999;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  .close-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+  }
+
+  aside.show .close-button {
+    display: block;
+  }
+aside h3{
+    text-align: center;
+    color: white;  
+}
+aside img{
+    width: 250px;
+    height: 300px;
+    margin-left: auto;
+  margin-right: auto;display: block;
+}
+aside span{
+    font-size: 12px;
+}
+.about{
+    background-color: #2C3639;
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-bottom: 150px;
+    padding-right: 100px;
+    color: white;
+}
+.about > h1{
+    font-size: 64px;
+    text-align: center;
+}
+.about-detail > p{
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 0.5in;
+    width: 75%;
+}
+.about-image{
+    width: 25%;
+    padding-top: 10px;
+}
+.about-image >img{
+    width: 250px;
+    height: 300px;
+}
+.experience{
+    background-color: #2C3639;
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-bottom: 150px;
+    padding-right: 100px;
+    color: white;
+}
+.experience > h1{
+    font-size: 64px;
+    text-align: center;
+}
+.portofolio{
+    background-color: #2C3639;
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-bottom: 150px;
+    padding-right: 100px;
+    color: white;
+}
+.portofolio > h1{
+    font-size: 64px;
+    text-align: center;
+}
+.web-porto{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+.sideproject{
+    background-color: #2C3639;
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-bottom: 150px;
+    padding-right: 100px;
+    color: white;
+}
+.sideproject .flex-container{
+    flex-direction: column;
+    text-align: center;
+}
+
+.sideproject > h1{
+    font-size: 64px;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    position: fixed;
+      bottom: 0;
+      right: 0;
+      left :0;
+      top: 20;
+      background-color: black;
+      color: white;
+    }
+footer a{
+    color: white;
+}
+    .artwork{
+        padding-top: 200px;
+        padding-left: 100px;
+        padding-bottom: 200px;
+        padding-right: 100px;
+        color: white;
+    }
+    .artwork > h1{
+        font-size: 64px;
+        text-align: center;
+    }
+    .artwork > p{
+        font-size: 14px;
+        text-align: justify;
+        text-indent: 0.5in;
+        width: 50%;
+    }
+    .img-square{
+        min-width: 250px;
+        min-height: 250px;
+        max-width: 250px;
+        max-height: 250px;
+        flex: 1 0 50%;   
+    }
+    .image-flex{
+        margin-left: auto;
+      margin-right: auto;
+        display: flex;
+        overflow: auto;
+        gap: 75px;
+        row-gap: 100px;
+    }

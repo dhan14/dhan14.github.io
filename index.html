@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Muhammad Yaqdhan Taqy Ariana</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+    <div class="jumbotron">
+    <nav class="sticky">
+        <ul>
+            <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#sideproject">Side-Project</a></li>
+          <li><a href="#artwork">Artwork</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script>
+        function toggleAside() {
+          var aside = document.getElementById("profileAside");
+          var toggleButton = document.getElementById("toggleButton");
+    
+          if (aside.classList.contains("show")) {
+            aside.classList.remove("show");
+            toggleButton.innerHTML = "+";
+          } else {
+            aside.classList.add("show");
+            toggleButton.innerHTML = "X";
+          }
+        }
+    
+        function closeAside() {
+          var aside = document.getElementById("myAside");
+          var toggleButton = document.getElementById("toggleButton");
+    
+          aside.classList.remove("show");
+          toggleButton.innerHTML = "+";
+        }
+      </script>
+</header>
+<body>
+    <main>
+        <button id="toggleButton" class="toggle-button" onclick="toggleAside()">+</button>
+        <aside id="profileAside">
+            <h3>Profile</h3>
+                <img src="image/about.png" alt="">
+            <ul style="list-style: none;">
+                <li>
+                    <span>Fullname = Muhammad Yaqdhan Taqy Ariana</span>
+                </li>
+                <li><span>D.O.B = Bandung, 14 November 1999</span></li> 
+                <li><span></span></li>
+                <li><span>Address = Jl. Sekeloa Gg.Loa I No.29 <br>
+                    RT/W 01/02 <br> Bandung 40132</span></li><br>
+                    <li><span>Interest = Backend Developer, Electronica, Sound Design, Penetration Testing</span></li> 
+            </ul>
+        </aside>
+        <div class="main-root" id="home">
+            <h1>Muhammad Yaqdhan <br>Taqy Ariana</h1>
+                <p>A backend developer,<br>
+                    Cybersecurity enthusiast,<br>
+                    Experimental musician,<br>
+                    Linux geek</p> 
+        </div>
+       
+        <div class="about" id="about">
+            <h1>About Me</h1>
+        <article>
+            <div class="flex-container">
+                <div class="about-detail">
+                    <p>
+                    I am Muhammad Yaqdhan Taqy Ariana, 
+                    am an Informatic Engineering student at Sekolah Tinggi Teknologi Bandung. 
+                    Has an interest in the fields of back-end developer, cybersecurity and computer networks. 
+                    Having capability programming languages ​​such as PHP, Javascript, SQL. 
+                    In my daily life, I spend time exploring the Linux operating system, 
+                    both in developing information systems, carrying out penetration testing, 
+                    modifying the operating system so that it can support daily needs.
+                    </p>
+                    <p>
+                        Besides that, I have a side project as an experimental musician, 
+                        performing works in the ambient genre. Joined in a post-rock unit called "Brainforest" and active as a multi-instrumentalist. 
+                        In a personal project with the stage name "LazyCat Disorder", I experimented with making my own musical instruments using the media around me, 
+                        designing simple circuits using electronic components and also making a simple synthesizer using Arduino. 
+                        The music presented is dark ambient and harsh noise.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="image/selfabout.jpg" alt="">
+                </div>
+            </div>
+            </article>
+        </div>
+        <div class="experience" id="experience">
+            <h1>Experience</h1>
+            
+            <div class="flex-container">
+                <div class="experience-content">
+                    <article>
+                        <h2>Robotic Exploler - Freelance Teacher</h2>
+                            <h4>July 2022 – October 2022</h4> 
+                            <ul>
+                                <li>Teaching basic algorithms in applying logic to robots implemented in software
+                                    SD level EV3 and Re-Bot</li>
+                                <li>Teaching basic construction in robots for elementary school level</li>
+                            </ul>
+                    </article>
+                    <article>
+                        <h2>Universitas Logistik Bisnis Internasional <br>(Politeknik Pos Indonesia) - Penetration Tester</h2>
+                            <h4>2022</h4> 
+                            <ul>
+                                <li>Carrying out initial tests to review system leaks</li>
+                                <li>Provide reports in the form of Prove Of Concept and provide suggestions for overcoming bugs.</li>
+                                <li>Performing some patch for any bug reported</li>
+                            </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="portofolio" id="portofolio">
+            <h1>Portofolio</h1>
+            <div class="flex-container">
+                <div class="web-porto">
+                    <h2>Hands of Record - An indie Netlabel</h2>
+                    <img src="image/web-porto1.png" alt="">
+                    <img src="image/web-porto2.png" alt="">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="sideproject" id="sideproject">
+            <h1>Side-Project</h1>
+            <div class="flex-container">
+                <div class="brainforest">
+                    <h2>Brainforest</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EK3FK1nzM5s?si=ddlzFMIYtX1CWM7M&amp;start=542" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="lcdisorder">
+                    <h2>lazyCat Disorder</h2>
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                    <div class="elfsight-app-2d2e8d9c-b3a3-46ea-a2e3-d6636bd113c2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="artwork" id="artwork">
+            <h1>Artwork</h1>
+            <div class="image-flex">
+                <img class="img-square" src="image/portofolio-bandung-is-under-construction.jpg">
+                <img class="img-square" src="image/portofolio-sang-pemikir.jpg">
+                <img class="img-square" src="image/portofolio-tribute-to-danilla.jpg">
+                <img class="img-square"src="image/portofolio-ice-milky.jpg">
+            </div>
+        </div>
+    </main> 
+    <footer>
+        <span>Contact</span>
+        <br>
+        <a href="mailto: yaqdhan.ariana@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path fill="currentColor" d="M1 5h1V4h18v1h1v13h-1v1H2v-1H1V5m2 12h16V9h-1v1h-2v1h-2v1h-2v1h-2v-1H8v-1H6v-1H4V9H3v8M19 6H3v1h2v1h2v1h2v1h4V9h2V8h2V7h2V6Z"/></svg></a>
+        <a href="https://www.linkedin.com/in/muhammad-yaqdhan-taqy-ariana-755a88195/"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 1024 1024"><path fill="currentColor" d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2c-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7c120.2 0 142.3 79.1 142.3 181.9v209.4z"/></svg></a>
+        <a href="https://www.instagram.com/dhan14.png/"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0ZM12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.886 2.886 0 0 0-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.91 2.91 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.912 2.912 0 0 0-.703-1.08a2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4Zm0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122c0 2.717-.01 3.056-.06 4.122c-.05 1.065-.218 1.79-.465 2.428a4.884 4.884 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06c-2.717 0-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.89 4.89 0 0 1-1.772-1.153a4.905 4.905 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428c-.048-1.066-.06-1.405-.06-4.122c0-2.717.01-3.056.06-4.122c.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772a4.897 4.897 0 0 1 1.772-1.153c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2Z"/></svg></a>
+    </footer>
+</body>
+</html>
