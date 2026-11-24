@@ -1,0 +1,1 @@
+import{l as o}from"./index-CC4hH8hr.js";import{m as r}from"./mock-CPMohx9R.js";const t=o("profile",{state:()=>({profile:null,loading:!1,error:null}),actions:{async fetchProfile(){this.loading=!0;try{this.profile=r.profile}catch(e){this.error=e.message}finally{this.loading=!1}}}});export{t as u};
